@@ -77,4 +77,13 @@ npm ERR! nospc There appears to be insufficient space on your system to complete
 
 --> Este tipo de errores ocurre cuando el espacio en disco es insuficiente
 
-# Solución
+## Solución
+# Limpiar caché de apt
+sudo apt clean
+sudo apt autoremove
+
+# Limpiar archivos temporales
+sudo rm -rf /tmp/*
+
+# Limpiar caché de npm
+npm cache clean --force
